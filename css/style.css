@@ -112,7 +112,7 @@ footer {
 }
 
 .error-icon {
-	display: inline-block;
+	display: none;
 	background: url("../images/error.png") no-repeat 0 0;	
 	width: 21px;
 	height: 21px;

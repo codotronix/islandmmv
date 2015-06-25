@@ -11,24 +11,24 @@
 		<label class="label label-danger">Email Already Exists</label>
 	</div>
 	<div class="col-md-6">
-		<input class="form-control" type="text" id="firstName" name="firstName" placeholder="First name" data-ng-model="user.firstName" data-ng-keyup="validateFname()"/>
-		<span class="error-icon" data-ng-hide="fnameOk"></span>
+		<input class="form-control required" type="text" id="firstName" name="firstName" placeholder="First name" data-ng-model="user.firstName"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-6">
-		<input class="form-control" type="text" id="lastName" name="lastName" placeholder="Last name" data-ng-model="user.lastName" data-ng-keyup="validateLname()"/>
-		<span class="error-icon" data-ng-hide="lnameOk"></span>
+		<input class="form-control required" type="text" id="lastName" name="lastName" placeholder="Last name" data-ng-model="user.lastName"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="text" id="chosenEmail" name="chosenEmail" placeholder="Enter a valid email address" data-ng-model="user.email" data-ng-keyup="validateEmail()"/>
-		<span class="error-icon" data-ng-hide="emailOk"></span>
+		<input class="form-control required email" type="text" id="chosenEmail" name="chosenEmail" placeholder="Enter a valid email address" data-ng-model="user.email"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="password" id="chosenPswd" name="chosenPswd" placeholder="Choose a password" data-ng-model="user.password" data-ng-keyup="validatePswd()"/>
-		<span class="error-icon" data-ng-hide="pswdOk"></span>
+		<input class="form-control required password" type="password" id="chosenPswd" name="chosenPswd" placeholder="Choose a password" data-ng-model="user.password"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="password" id="reChosenPswd" name="reChosenPswd" placeholder="Re-enter the password" data-ng-model="user.rePassword" data-ng-keyup="validateRePswd()"/>
-		<span class="error-icon" data-ng-hide="rePswdOk"></span>
+		<input class="form-control required repassword" type="password" id="reChosenPswd" name="reChosenPswd" placeholder="Re-enter the password" data-ng-model="user.rePassword"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
 		<label class="col-xs-4"><input type="radio" name="gender" value="M"checked="checked"> Male</label>
